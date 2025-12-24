@@ -16,6 +16,8 @@
 body {
     display: flex;
     justify-content: center;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .main-container {
@@ -129,6 +131,13 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .filterbar-container p{
+        flex-basis: 100%;
+    }
+    .filterbar-container button{
+        width: 161px;
+        font-size: 16px;
+    }
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -159,9 +168,103 @@ a {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    .activites-container img{
+        height: 200px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .header-container{
+        display: block;
+        margin-top: 40px;
+    }
+    .title-container{
+        width: 93px;
+        height: 28.5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header-container *{
+        text-align: center;
+    }
+    .header-links-container{
+        display: flex;
+        justify-content: center;
+    }
+    .header-links-container a{
+        flex:1 1 50%;
+        margin: 0;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border-bottom:2px solid #D9D9D9;
+    }
+    .header-links-container a:hover{
+        color: #0065FC;
+        border-bottom:2px solid #0065FC;
+        border-top:none;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    
+    .main-container{
+        padding: 0;
+    }
+    .search-container{
+        padding: 20px;
+    }
+    .searchbar-container{
+        justify-content: center;
+    }
+    .searchbar-container button{
+        border-radius: 15px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    .searchbar-container button i{
+        display: block;
+        color: white;
+    }
+    .searchbar-container button span{
+        display: none;
+    }
+    .search-titles h2 {
+        margin-top: 0px;
+    }
+    .filterbar-container button{
+        width: 162.5px;
+        font-size: 14px;
+    }
+    .hebergements-and-populaires {
+        flex-flow: column-reverse;
+    }
+    .hebergements-and-populaires section {
+        border-radius: 0;
+    }
+    .populaires-cards{
+        display: block;
+    }
+    .hebergements-container{
+        display: block;
+        margin-top: 0;
+    }
+    .hebergements-card{
+        margin-top: 20px;
+    }
+    .activites-container{
+        display: block;
+    }
+    .activites-card{
+        margin-bottom: 20px;
+    }
+    .hebergements{
+        background-color: white !important;
+    }
+    footer {
+    display: block;
+    }
+    footer div{
+        width: auto;
+        margin-bottom: 50px;
+    }
+    
 }
