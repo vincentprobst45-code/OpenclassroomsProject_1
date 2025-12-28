@@ -27,7 +27,7 @@
     color: #0065FC;
     border-top:2px solid #0065FC;
 }
-.search-titles h2{
+.search-titles h1{
     margin-bottom: 5px;
     font-size: 22px;
 }
@@ -55,7 +55,7 @@
     color: black;
     vertical-align: middle;
     position: relative;
-    top:10px;
+    top:11px;
     left:1px;
 }
 .searchbar-container input{
@@ -63,6 +63,7 @@
     font-weight:bold;
     color: black;
     width: 200px;
+    height: 46px;
     border-top:1px solid #F2F2F2;
     border-bottom:1px solid #F2F2F2;
     padding-left: 5px;

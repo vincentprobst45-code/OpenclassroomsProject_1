@@ -256,6 +256,9 @@ a {
     .activites-card{
         margin-bottom: 20px;
     }
+    .activites-container img{
+        height: 141px;
+    }
     .hebergements{
         background-color: white !important;
     }
